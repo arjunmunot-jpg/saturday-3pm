@@ -76,7 +76,7 @@
   /* ---------------------------------------------------------------- sending messages, one after another */
   let queue = Promise.resolve(), waiting = 0;
   const pause = (ms) => new Promise(r => setTimeout(r, calm ? 0 : (waiting > 2 ? Math.min(ms, 160) : ms)));
-  const toEnd = () => { const s = document.scrollingElement; s.scrollTop = s.scrollHeight; };
+  const toEnd = () => { msgs.scrollTop = msgs.scrollHeight; };
 
   function bubble(item, mine) {
     let b;
