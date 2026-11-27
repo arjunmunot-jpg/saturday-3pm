@@ -10,7 +10,7 @@ button { font: inherit; cursor: pointer; }
 .backdrop img { width: 100%; height: 100%; object-fit: cover; }
 .backdrop::after { content: ""; position: absolute; inset: 0; background: rgba(20, 22, 27, .16); }
 
-.chat { position: relative; z-index: 1; width: 470px; height: 100dvh; margin-left: 20px; display: flex; flex-direction: column; }
+.chat { position: relative; z-index: 1; width: 470px; max-width: calc(100% - 28px); height: 100dvh; margin: 0 auto; display: flex; flex-direction: column; }
 .chat-head { flex: none; align-self: flex-start; display: flex; align-items: center; gap: 12px; margin: 16px 0 4px; padding: 8px 20px 8px 8px; background: #fff; border-radius: 34px; box-shadow: 0 2px 12px rgba(20, 22, 27, .28); }
 .chat-head img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; }
 .chat-head .who { font-weight: 650; line-height: 1.2; }
@@ -40,7 +40,7 @@ button { font: inherit; cursor: pointer; }
 
 @media (max-width: 900px) {
   .backdrop::after { background: rgba(20, 22, 27, .42); }
-  .chat { width: auto; margin: 0 14px; }
+  .chat { width: auto; max-width: none; margin: 0 14px; }
   .msg { max-width: 88%; }
   .msg.photo img { width: min(300px, 70vw); }
 }
