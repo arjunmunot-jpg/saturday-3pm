@@ -22,6 +22,7 @@
         { line: "Fine. I'll stop asking." },
         { line: 'I lied.' }
       ],
+      won: ['Haha, I won again.', 'You have to come now.'],
       hint: 'I am going to beat you at it, though.'
     },
     nazneen: {
@@ -189,6 +190,7 @@
     reply.hidden = true;
     send('Yes', true);
     send('Knew it.');
+    (d.won || []).forEach(m => send(m));
     send({ photo: 0 });
     send("Tomorrow, 3 PM. Be ready, I'm picking you up.");
     send("Wear something casual and nice that you can move in. Not a dress you can't run in.");
