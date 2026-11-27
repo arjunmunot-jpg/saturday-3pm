@@ -7,14 +7,14 @@
      Each try at No makes him send the next entry: a photo, a line, or both. */
   const DATA = {
     zara: {
-      name: 'Zara', from: 'Arjun', friend: 'Nirvan', other: 'Nazneen',
+      name: 'Zara', from: 'Arjun', friend: 'Nirvaan', other: 'Nazneen',
       backdrop: P + 'arjun-zara-couple.jpg', backdropAt: '50% 38%',
       frame: (i) => `${P}arjun-wall-${i}.jpg`, avatar: (i) => `${P}arjun-avatar-${i}.jpg`, frames: 8,
       tries: [
         { photo: 1, line: '?' },
         { photo: 2, line: 'Zara.' },
         { photo: 3, line: "It's a Saturday. What else are you doing?" },
-        { photo: 4, line: 'Nirvan and I planned a whole thing.' },
+        { photo: 4, line: 'Nirvaan and I planned a whole thing.' },
         { photo: 5, line: "There's something tomorrow I'm going to beat you at. You should be there for it." },
         { photo: 6, line: 'Saying no counts as forfeiting, by the way.' },
         { photo: 7, line: "That's another loss for you. I'm keeping count." },
@@ -26,7 +26,7 @@
       hint: 'I am going to beat you at it, though.'
     },
     nazneen: {
-      name: 'Nazneen', from: 'Nirvan', friend: 'Arjun', other: 'Zara',
+      name: 'Nazneen', from: 'Nirvaan', friend: 'Arjun', other: 'Zara',
       backdrop: P + 'nirvan-nazneen-couple.jpg', backdropAt: '50% 22%',
       frame: (i) => `${P}nirvan-face-${i}.jpg`, avatar: (i) => `${P}nirvan-avatar-${i}.jpg`, frames: 5,
       tries: [
